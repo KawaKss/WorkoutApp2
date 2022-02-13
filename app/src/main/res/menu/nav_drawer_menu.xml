@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/donateFragment"
-            android:icon="@drawable/ic_menu_donate"
+            android:icon="@android:drawable/ic_menu_add"
             android:title="@string/action_exercise" />
         <item
             android:id="@+id/reportFragment"

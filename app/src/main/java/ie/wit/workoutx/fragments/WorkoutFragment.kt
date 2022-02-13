@@ -11,6 +11,7 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import ie.wit.workoutx.R
+import ie.wit.workoutx.R.string.action_workout
 import ie.wit.workoutx.databinding.FragmentWorkoutBinding
 import ie.wit.workoutx.main.WorkoutXApp
 import ie.wit.workoutx.models.ExerciseModel
@@ -33,6 +34,7 @@ class WorkoutFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         app = activity?.application as WorkoutXApp
+
         setHasOptionsMenu(true)
 
         //Receiving model
@@ -48,13 +50,15 @@ class WorkoutFragment : Fragment() {
     ): View? {
         _fragBinding = FragmentWorkoutBinding.inflate(inflater, container, false)
         val root = fragBinding.root
-        activity?.title = getString(R.string.action_workout)
         fillWorkoutList()
         updateListener()
         deleteListener()
         variablesetter()
+        activity?.title = getString(action_workout)
 return root
     }
+
+
 
 
     private fun updateListener(){
