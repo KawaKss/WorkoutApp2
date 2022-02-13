@@ -6,6 +6,6 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class ExerciseModel(var id: Long = 0,
-                         val workoutName: String = "",
-                         val workoutType: String = "N/A",
-                         val workoutDuration: String = "") : Parcelable
+                         var workoutName: String = "",
+                         var workoutType: String = "N/A",
+                         var workoutDuration: String = "") : Parcelable

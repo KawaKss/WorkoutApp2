@@ -36,7 +36,7 @@ class ExerciseAdapter constructor(private var exercises: List<ExerciseModel>, va
 
 
             binding.workName.text = exercise.workoutName
-            binding.workDuration.text = exercise.workoutDuration + "Hours"
+            binding.workDuration.text = exercise.workoutDuration + " hours"
             binding.workType.text = exercise.workoutType
             binding.imageIcon.setImageResource(R.mipmap.ic_launcher_round)
         }

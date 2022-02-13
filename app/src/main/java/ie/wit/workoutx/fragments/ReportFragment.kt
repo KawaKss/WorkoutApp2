@@ -36,11 +36,17 @@ class ReportFragment : Fragment(),Listener {
         val root = fragBinding.root
         activity?.title = getString(R.string.action_report)
 
-        fragBinding.recyclerView.setLayoutManager(LinearLayoutManager(activity))
-        fragBinding.recyclerView.adapter = ExerciseAdapter(app.exercisesStore.findAll(),this)
+
 
         return root
     }
+
+    override fun onResume() {
+        super.onResume()
+        fragBinding.recyclerView.setLayoutManager(LinearLayoutManager(activity))
+        fragBinding.recyclerView.adapter = ExerciseAdapter(app.exercisesStore.findAll(),this)
+    }
+
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_report, menu)

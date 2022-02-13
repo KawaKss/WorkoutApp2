@@ -9,14 +9,17 @@
     <string name="defaultMethod">N/A</string>
     <string name="enter_amount">Enter Amount</string>
     <string name="action_exercise">Add</string>
-    <string name="action_report">Report</string>
+    <string name="workoutTitle">Edit Workout</string>
+    <string name="action_report">List Of Workouts</string>
+    <string name="action_workout">Edit Workout</string>
+
 
     <string name="action_share">Share</string>
     <string name="action_send">Send</string>
     <string name="group_communicate">Communicate</string>
 
     <string name="nav_header_title">WorkoutX</string>
-    <string name="nav_header_subtitle">voteforhomer@android.com</string>
+    <string name="nav_header_subtitle">Create a Workout Today</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="workName">Workout Name</string>
     <string name="workDuration">Workout Duration</string>
@@ -30,6 +33,5 @@
         <item>Biceps</item>
         <item>Triceps</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update</string>
 </resources>

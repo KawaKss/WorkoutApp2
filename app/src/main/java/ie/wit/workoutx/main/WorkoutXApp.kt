@@ -12,7 +12,7 @@ class WorkoutXApp : Application() {
     override fun onCreate() {
         super.onCreate()
         Timber.plant(Timber.DebugTree())
-        exercisesStore = ExerciseMemStore()
+        exercisesStore = ExerciseMemStore(applicationContext)
         Timber.i("WorkoutX Application Started")
     }
 }
